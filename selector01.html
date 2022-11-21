@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector01</title>
+    <style>
+        #id {
+            color: blue;
+            padding: 100px; 
+            /* padding: 상 우 하 좌 */
+            /* padding: 상 하 */
+            /* padding: 좌 우 */
+            box-sizing: border-box; /* 박스사이즈를 border안에 !중요! */
+
+        }
+        /* 우선순위 id>class>선택자 */
+
+        .class {
+            color: yellow;
+        }
+
+        div {
+            color: red;
+            background-color: #ddd;
+            width: 1200px;
+            border: 1px solid #333; 
+            /*      사이즈 스타일 컬러 
+            dotted 점선*/
+            margin: 100px;
+            /* margin은 아래쪽으로만 준다 (마진 겹침 현상 때문에) , 가장 큰 박스끼리 띄울때는 마진을 안쓴다 */
+        }
+
+        /* {속성 : 속성값;} */
+    </style>
+</head>
+
+<body>
+    <div id="id" class="class">selector01</div> <!-- id 는 고유한값, 하나만 -->
+    <div class="class">selector01</div> <!-- class 이름 지을때 맨앞에 숫자 x -->
+    <div>selector01</div>
+    <div>selector01</div>
+    <div>selector01</div>
+</body>
+
+</html>

@@ -5,8 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* 내부 스타일시트 */
+        h1 {
+            color : tomato !important;
+        } 
+        /* h1 은 테그 선택자 */
+        /* !important 자바스크립트보다 더 우선해야할때 쓴다 */
+
+        li {
+            color: tomato;
+            color: blue;
+        }
+        /* 밑에 컬러로 적용 */
+
+        ul {
+            color: #ddd;
+        }
+        /* 자식(li)꺼가 적용된다 */
+
+    </style>
 </head>
+
 <body>
-    <h1>HTML 01</h1>
+    <!-- 기본 box -->
+    <div>HTML 01</div> <!-- div 폰트 사이즈 기본 16px -->
+    <h1 style="color: blue;">HTML 01</h1> <!-- 로고, 큰타이틀 --> <!-- h1 style은 자바스크립트가 우선할때, css보다 우선적용-->
+    <h2>HTML 01</h2> <!-- 두번째 타이틀 <h2><p> 같이 많이 씀 -->
+    <h3>HTML 01</h3>
+    <h4>HTML 01</h4>
+    <h5>HTML 01</h5>
+    <h6>HTML 01</h6>
+
+    <!-- 리스트 box -->
+    <ul>
+        <li>HTML 01</li>
+        <li>HTML 01</li>
+        <li>HTML 01</li>
+        <li>HTML 01</li>
+    </ul>
+
+    <ol>
+        <li>HTML 01</li>
+        <li>HTML 01</li>
+        <li>HTML 01</li>
+        <li>HTML 01</li>
+    </ol>
+
+    <dl>
+        <dt>HTML 01</dt>
+        <dd>HTML 01</dd>
+        <dd>HTML 01</dd>
+        <dd>HTML 01</dd>
+    </dl>
+    
+    <p>HTML 01</p> <!-- 문장만, 박스를 넣을 수 없다 -->
+
+    <!-- 인라인 : 글자 , 그림  -->
+    <a href="">HTML 01</a>
+    <strong>HTML 01</strong>
+    <em>HTML 01</em>
+    <span>HTML 01</span>
+    
+    <!-- 시멘틱 테그 : 의미만 가지고 있는 -->
+    <header>HTML 01</header>
+    <footer>HTML 01</footer>
+    <main>HTML 01</main>
+    <section>HTML 01</section>
+    <aside>HTML 01</aside>
+    <article>HTML 01</article>
+    <figure>HTML 01</figure> <!-- 이미지 -->
+    <nav>HTML 01</nav>
+
+
 </body>
 </html>
