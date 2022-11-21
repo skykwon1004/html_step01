@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout01</title>
+    <style>
+        * {
+            font-size: inherit;
+            font-weight: inherit;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul, 
+        ol {
+            list-style: none; /* ul,ol의 점,숫자 없애주는것 list-style: none; */
+        } 
+
+        a {
+            color: inherit; /* a눌렀을때 색없어짐 */
+            text-decoration: none; /* a의 밑줄 없어짐 */
+        }
+
+        em, 
+        i,
+        address {
+            font-style: normal;
+        }
+
+        body {
+            line-height: 1; /* 글자 위아래 사이 공간 */
+        }
+
+        .sc01 {
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .sc01 h2 {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0 0 20px 0;
+        }
+
+        .sc01 p {
+            font-size: 15px;
+            margin: 0 0 40px 0;
+        }
+
+        .inner01 {
+            display: flex; /* 박스를 가로로 배열 */
+            gap: 30px; /* 박스 사이 여백(띄우기) 무조건 30px*/
+            width: 1200px;
+            margin: 0 auto; /* 박스를 가운데 오게 */
+        }
+
+        .inner01 .box {
+            flex: 1; /* 1200px에서 저절로 나눠 가지게 배열 ex) 3등분 */
+            background: #ff0;
+        }
+        
+        .sc02 {
+            padding: 100px 0;
+            text-align: center;
+            background: #f9f9f9;
+        }
+
+        .sc02 h2 {
+            font-size: 30px;
+            font-weight: bold;
+            margin: 0 0 20px 0;
+        }
+
+        .sc02 p {
+            font-size: 15px;
+            margin: 0 0 40px 0;
+        }
+
+        .inner02 {
+            display: flex;
+            gap: 30px;
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .inner02 .box {
+            flex: 1;
+            background: #ff0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <section class="sc01">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quas voluptatibus sit molestias suscipit
+            quam nulla voluptates unde.</p>
+        <div class="inner01">
+            <div class="box">01</div>
+            <div class="box">02</div>
+        </div>
+    </section>
+
+    <section class="sc02">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quas voluptatibus sit molestias suscipit
+            quam nulla voluptates unde.</p>
+        <div class="inner02">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">02</div>
+        </div>
+    </section>
+
+    <section class="sc01">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quas voluptatibus sit molestias suscipit
+            quam nulla voluptates unde.</p>
+        <div class="inner01">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+        </div>
+    </section>
+
+    <section class="sc02">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quas voluptatibus sit molestias suscipit
+            quam nulla voluptates unde.</p>
+        <div class="inner02">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+            <div class="box">05</div>
+        </div>
+    </section>
+
+    <section class="sc01">
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti quas voluptatibus sit molestias suscipit
+            quam nulla voluptates unde.</p>
+        <div class="inner01">
+            <div class="box">01</div>
+            <div class="box">02</div>
+            <div class="box">03</div>
+            <div class="box">04</div>
+            <div class="box">05</div>
+            <div class="box">06</div>
+        </div>
+    </section>
+
+</body>
+
+</html>

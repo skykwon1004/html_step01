@@ -6,23 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        /* 내부 스타일시트 */
-        h1 {
-            color : tomato !important;
+        * {
+            font-size: inherit;
+            font-weight: inherit;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        ul, 
+        ol {
+            list-style: none; /* ul,ol의 점,숫자 없애주는것 list-style: none; */
         } 
-        /* h1 은 테그 선택자 */
-        /* !important 자바스크립트보다 더 우선해야할때 쓴다 */
 
-        li {
-            color: tomato;
-            color: blue;
+        a {
+            color: inherit; /* a눌렀을때 색없어짐 */
+            text-decoration: none; /* a의 밑줄 없어짐 */
         }
-        /* 밑에 컬러로 적용 */
 
-        ul {
-            color: #ddd;
+        em, 
+        i,
+        address {
+            font-style: normal;
         }
-        /* 자식(li)꺼가 적용된다 */
+
+        body {
+            line-height: 1; /* 글자 위아래 사이 공간 */
+        }
 
     </style>
 </head>
@@ -32,7 +43,7 @@
     <div>HTML 01</div> <!-- div 폰트 사이즈 기본 16px -->
 
     <!-- 제목 box -->
-    <h1 style="color: blue;">HTML 01</h1> <!-- 로고, 큰타이틀 --> <!-- h1 style은 자바스크립트가 우선할때, css보다 우선적용-->
+    <h1>HTML 01</h1> <!-- 로고, 큰타이틀 --> <!-- h1 style은 자바스크립트가 우선할때, css보다 우선적용-->
     <h2>HTML 01</h2> <!-- 두번째 타이틀 <h2><p> 같이 많이 씀 -->
     <h3>HTML 01</h3>
     <h4>HTML 01</h4>
