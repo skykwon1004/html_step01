@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요소를 안보이게 하는 방법들</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        section {
+            border: 1px solid tomato;
+            padding: 100px;
+            margin: 100px;
+            text-align: center;
+            background: #f9f9f9;
+        }
+
+        section .box {
+            padding: 50px;
+            background: #ddd;
+        }
+
+        .display .box {
+            display: none;
+        }
+
+        .visibility .box {
+            visibility: hidden;
+        }
+        /* a테그 까지 없어짐 , 공간을 놔둔다 */
+
+        .opacity .box {
+            opacity: 0;
+        }
+        /* a테그 투명해져서 있음 */
+
+        .overflow .box a {
+            display: block;
+            height: 0;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="display">
+        <div class="box"><a href="">my dream is lotto</a></div>
+    </section>
+    <section class="visibility">
+        <div class="box"><a href="">my dream is lotto</a></div>
+    </section>
+    <section class="opacity">
+        <div class="box"><a href="">my dream is lotto</a></div>
+    </section>
+    <section class="overflow">
+        <div class="box"><a href="">my dream is lotto</a></div>
+    </section>
+</body>
+
+</html>
